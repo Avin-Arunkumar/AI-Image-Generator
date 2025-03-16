@@ -362,3 +362,28 @@ body.dark-theme .container {
   text-align: center;
   color: var(--color-placeholder);
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #7b5aff, #8e9bff);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.highlight {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
