@@ -63,7 +63,5 @@ Found a bug? Have ideas for new features? Feel free to **open an issue** or **su
 
 ---
 
-## 📜 License  
-© 2025 AI Image Generator. All rights reserved.  
 
 Developed by **Avin A**  
