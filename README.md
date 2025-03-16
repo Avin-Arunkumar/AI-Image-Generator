@@ -9,7 +9,7 @@ The **AI Image Generator** is a simple yet powerful web application that allows 
 ---
 
 ## 🔗 Live Demo  
-🌐 **Check it out here:** [http://127.0.0.1:5500/] 
+🌐 **Check it out here:**https://ai-image-generator-three-liart.vercel.app/
 
 
 ---
