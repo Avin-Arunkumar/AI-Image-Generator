@@ -61,7 +61,7 @@ const updateImageCard = (imgIndex, imgUrl) => {
                             </div>`;
 };
 
-const API_KEY = "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";
+const API_KEY = process.env.API_KEY || "default_fallback_key";
 
 const generateImage = async (
   selectedModel,
