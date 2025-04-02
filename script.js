@@ -61,7 +61,7 @@ const updateImageCard = (imgIndex, imgUrl) => {
                             </div>`;
 };
 
-const API_KEY = "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";
+const API_KEY = "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";
 const generateImage = async (
   selectedModel,
   imageCount,
