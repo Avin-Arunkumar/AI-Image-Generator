@@ -61,7 +61,7 @@ const updateImageCard = (imgIndex, imgUrl) => {
                             </div>`;
 };
 
-const API_KEY = "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";
+const API_KEY = "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";
 const generateImage = async (
   selectedModel,
   imageCount,
@@ -149,3 +149,4 @@ promptBtn.addEventListener("click", () => {
 
 promptForm.addEventListener("submit", handleFormSubmit);
 themeToggle.addEventListener("click", toggleTheme);
+
