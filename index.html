@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AI Image Generator</title>
-        <!-- Linking Font Awesome for icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
         <link rel="stylesheet" href="./style.css" />
     </head>
@@ -21,9 +20,25 @@
                     <i class="fa-solid fa-moon"></i>
                 </button>
             </header>
+
+            <!-- API Key Modal -->
+            <div id="key-modal" class="modal">
+                <div class="modal-content">
+                    <h3>API Key Required</h3>
+                    <p>Enter your Hugging Face API key to generate images:</p>
+                    <input type="password" id="api-key-input" placeholder="hf_xxxxxxxxxxxxxxxx" />
+                    <div class="modal-buttons">
+                        <button id="save-key-btn">Save Key</button>
+                        <a href="https://huggingface.co/settings/tokens" target="_blank" class="get-key-btn">
+                            Get API Key
+                        </a>
+                    </div>
+                    <p class="small-text">Key is stored locally in your browser only</p>
+                </div>
+            </div>
+
             <div class="main-content">
                 <form action="#" class="prompt-form">
-                    <!--Promt container-->
                     <div class="prompt-container">
                         <textarea
                             class="prompt-input"
@@ -39,11 +54,9 @@
                         <div class="select-wrapper">
                             <select class="custom-select" id="model-select" required>
                                 <option value="">Select Model</option>
-<option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
-<option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL</option>
-<option value="stabilityai/stable-diffusion-3.5-large">Stable Diffusion 3.5 Large</option>
-<option value="prompthero/openjourney-v4">OpenJourney</option>
-
+                                <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL</option>
+                                <!-- <option value="stabilityai/stable-diffusion-2-1">Stable Diffusion 2.1</option>
+                                <option value="prompthero/openjourney-v4">OpenJourney</option> -->
                             </select>
                         </div>
                         <div class="select-wrapper">
@@ -51,7 +64,6 @@
                                 <option value="">Image Count</option>
                                 <option value="1">1 Image</option>
                                 <option value="2">2 Images</option>
-                                <option value="3">3 Images</option>
                                 <option value="4">4 Images</option>
                             </select>
                         </div>
@@ -60,23 +72,19 @@
                                 <option value="">Aspect Ratio</option>
                                 <option value="1/1">Square (1:1)</option>
                                 <option value="16/9">Landscape (16:9)</option>
-                                <option value="9/16">Portrait (1:16)</option>
+                                <option value="9/16">Portrait (9:16)</option>
                             </select>
                         </div>
-                        <button type="submit" class="generate-btn" id="submit">
+                        <button type="submit" class="generate-btn">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                             Generate
                         </button>
                     </div>
-                    <!--Result Gallery Grid-->
                     <div class="gallery-grid"></div>
                 </form>
             </div>
         </div>
+
         <script src="script.js"></script>
-        <footer class="footer">
-            <p>© 2025 AI Image Generator. All rights reserved.</p>
-            <p>Done by <span class="highlight">Avin A</span></p>
-        </footer>
     </body>
 </html>
